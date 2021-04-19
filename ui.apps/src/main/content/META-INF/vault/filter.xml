@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/bvicam-4603/clientlibs"/>
+    <filter root="/apps/bvicam-4603/components"/>
+    <filter root="/apps/bvicam-4603/i18n"/>
+</workspaceFilter>
