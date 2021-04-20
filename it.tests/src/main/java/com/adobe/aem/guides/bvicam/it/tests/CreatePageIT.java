@@ -22,7 +22,6 @@ import com.adobe.cq.testing.junit.rules.CQRule;
 import com.adobe.cq.testing.junit.rules.Page;
 import org.testng.annotations.BeforeClass;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static java.util.concurrent.TimeUnit.MINUTES;
@@ -42,14 +41,12 @@ public class CreatePageIT {
     // the hostname and port of the author service from the system properties
     // passed to the tests.
 
-    @ClassRule
     public static final CQAuthorClassRule cqBaseClassRule = new CQAuthorClassRule();
 
     // CQRule decorates your test and adds additional functionality on top of
     // it, like session stickyness, test filtering and identification of the
     // test on the remote service.
 
-    @Rule
     public CQRule cqBaseRule = new CQRule(cqBaseClassRule.authorRule);
 
     // Page will create a test page with a random name and it will make sure
@@ -58,7 +55,6 @@ public class CreatePageIT {
     // the same instance. By removing the page at the end of the test execution,
     // you are not going to leave any clutter on the instance under test.
 
-    @Rule
     public Page root = new Page(cqBaseClassRule.authorRule);
 
     static CQClient adminAuthor;

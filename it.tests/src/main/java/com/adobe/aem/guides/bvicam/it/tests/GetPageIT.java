@@ -18,10 +18,9 @@ package com.adobe.aem.guides.bvicam.it.tests;
 import com.adobe.cq.testing.client.CQClient;
 import com.adobe.cq.testing.junit.rules.CQAuthorPublishClassRule;
 import com.adobe.cq.testing.junit.rules.CQRule;
-import com.adobe.cq.testing.junit.rules.Page;
 import org.apache.sling.testing.clients.ClientException;
-import org.apache.sling.testing.clients.SlingHttpResponse;
-import org.junit.*;
+import org.junit.jupiter.api.Test;
+import org.testng.annotations.BeforeClass;
 
 
 /**
@@ -37,14 +36,12 @@ public class GetPageIT {
     // the hostname and port of the author service from the system properties
     // passed to the tests.@ClassRule
 
-    @ClassRule
     public static final CQAuthorPublishClassRule cqBaseClassRule = new CQAuthorPublishClassRule();
 
     // CQRule decorates your test and adds additional functionality on top of
     // it, like session stickyness, test filtering and identification of the
     // test on the remote service.
 
-    @Rule
     public CQRule cqBaseRule = new CQRule(cqBaseClassRule.authorRule, cqBaseClassRule.publishRule);
 
     static CQClient adminAuthor;

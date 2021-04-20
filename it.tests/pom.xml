@@ -55,11 +55,7 @@
             <artifactId>junit</artifactId>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>2021.4.5139.20210407T003220Z-210325</version>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
