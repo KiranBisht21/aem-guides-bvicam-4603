@@ -2,6 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2021-04-16T20:36:29.121+05:30"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/bvicam-4603/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -10,25 +12,61 @@
         jcr:title="Header"
         sling:resourceType="bvicam-4603/components/xfpage">
         <root
+            jcr:lastModified="{Date}2021-04-16T18:34:30.261+05:30"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="bvicam-4603/components/container"
-            layout="simple">
+            layout="responsiveGrid">
+            <image
+                jcr:created="{Date}2021-04-16T18:38:02.189+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-04-16T20:32:32.390+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="bvicam-4603/components/image"
+                alt="BVICAM Logo"
+                altValueFromDAM="false"
+                displayPopupTitle="true"
+                fileReference="/content/dam/bvicam-4603/logo-bvp.png"
+                isDecorative="false"
+                linkURL="/content/bvicam-4603/us/en"
+                titleValueFromDAM="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="2"/>
+                </cq:responsive>
+            </image>
             <navigation
+                jcr:lastModified="{Date}2021-04-16T20:35:32.444+05:30"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bvicam-4603/components/navigation"
                 collectAllPages="false"
+                disableShadowing="false"
                 navigationRoot="/content/bvicam-4603/us/en"
                 skipNavigationRoot="false"
-                structureDepth="1"/>
-            <languagenavigation
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="bvicam-4603/components/languagenavigation"
-                navigationRoot="/content/bvicam-4603/us"
-                structureDepth="2"/>
+                structureDepth="1"
+                structureStart="1">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="8"/>
+                </cq:responsive>
+            </navigation>
             <search
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="bvicam-4603/components/search"
-                searchRoot="/content/bvicam-4603/us"/>
+                searchRoot="/content/bvicam-4603/us">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="2"/>
+                </cq:responsive>
+            </search>
         </root>
     </jcr:content>
 </jcr:root>
